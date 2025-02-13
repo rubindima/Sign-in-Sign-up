@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="logo">LOGO</div>
-        <h1>Welcome to RubinCoin</h1>
+        <h1>Welcome to RubiCoin</h1>
         <p>Sign up</p>
         <form>
             <label for="email">Email</label>
