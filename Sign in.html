@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,15 +16,17 @@
             <input type="email" id="email" placeholder="Email" required>
 
             <label for="password">Password</label>
-    
-            <input type="password" id="password" placeholder="Password" required>
-
+<div class="password__container" style="position: relative;">
+    <input class="password-input" type="password" id="password" placeholder="Password" required>
+    <span id="togglePassword" style="cursor: pointer; position: absolute; right: 10px; top: 10px;">👁️</span>
+</div>
             <button type="submit">Sign in</button>
         </form>
         <div class="signin">
             Already have an account? <a href="#">Sign up</a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 <style>
@@ -40,7 +42,17 @@
     height: 100vh;
     background-color: #f9f9f9;
 }
-
+.password__container{
+  display:flex;
+}
+.password-input{
+  width:100%;
+      padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 .container {
     text-align: center;
     max-width: 400px;
